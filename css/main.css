@@ -8,20 +8,21 @@
     position: relative;
 }
 .img {
-    position: absolute;
     top: 206px;
     left: 300px;
+    width: 350px;
+	position: absolute;
+	transition: all 0.3s linear 0.9s;
+	animation-name: new;
+	animation-duration: 9s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear
 
 }
-h1  {
-    position: absolute;
-    color: aqua;
-    animation: new 0.5s ease 0.05s infinite;
-    animation-duration: 5s;
-    font-size: 25px;
-    left: 20px;
-    padding: 20px;
-}
+
 @keyframes new {
     0% {
        bottom: 50px;
@@ -34,6 +35,7 @@ h1  {
         animation: ease;
         color: plum;
         background: skyblue;
+        transform: rotate(180deg);
     }
     40% {
         bottom: 150px;
