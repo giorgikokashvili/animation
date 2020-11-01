@@ -9,56 +9,25 @@
 }
 .img {
     top: 206px;
-    left: 300px;
+    left: 250px;
     width: 350px;
 	position: absolute;
 	transition: all 0.3s linear 0.9s;
 	animation-name: new;
 	animation-duration: 9s;
-	animation-delay: 2s;
+	animation-delay: 2s; 
 	animation-iteration-count: infinite;
 	animation-fill-mode: backwards;
-	animation-direction: alternate-reverse;
+	animation-direction: reverse;
 	animation-timing-function: linear
 
 }
 
 @keyframes new {
-    0% {
-       bottom: 50px;
-        animation: ease;
-        color: pink;
-        background: silver;
+    from {
+        transform: rotate(360deg);
     }
-    20% {
-        bottom: 100px;
-        animation: ease;
-        color: plum;
-        background: skyblue;
-        transform: rotate(180deg);
-    }
-    40% {
-        bottom: 150px;
-        animation: ease;
-        color: purple;
-        background: slateblue;
-    }
-    60% {
-        bottom: 200px;
-        animation: ease;
-        color: rebeccapurple;
-        background: slategray;
-    }
-    80% {
-       bottom: 250px;
-        animation: ease;
-        color: rosybrown;
-        background: tan;
-    }
-    100% {
-        bottom: 300px;
-        animation: ease;
-        color: seashell;
-        background: thistle;
+    to {
+        transform: rotate();
     }
 }
