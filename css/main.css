@@ -1,0 +1,62 @@
+.bg {
+    width: 100%;
+    height: 637px;
+    background-image: url(../image/skull1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img {
+    position: absolute;
+    top: 206px;
+    left: 300px;
+
+}
+h1  {
+    position: absolute;
+    color: aqua;
+    animation: new 0.5s ease 0.05s infinite;
+    animation-duration: 5s;
+    font-size: 25px;
+    left: 20px;
+    padding: 20px;
+}
+@keyframes new {
+    0% {
+       bottom: 50px;
+        animation: ease;
+        color: pink;
+        background: silver;
+    }
+    20% {
+        bottom: 100px;
+        animation: ease;
+        color: plum;
+        background: skyblue;
+    }
+    40% {
+        bottom: 150px;
+        animation: ease;
+        color: purple;
+        background: slateblue;
+    }
+    60% {
+        bottom: 200px;
+        animation: ease;
+        color: rebeccapurple;
+        background: slategray;
+    }
+    80% {
+       bottom: 250px;
+        animation: ease;
+        color: rosybrown;
+        background: tan;
+    }
+    100% {
+        bottom: 300px;
+        animation: ease;
+        color: seashell;
+        background: thistle;
+    }
+}
